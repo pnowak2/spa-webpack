@@ -1,4 +1,7 @@
 require('./styles/style.css');
-var content = require('./app/content.js');
 
-document.write(content);
+var $ = require('jquery'),
+  HelloView = require('./app/content.js'),
+  helloView = new HelloView();
+
+$('body').html(helloView.render().el);
