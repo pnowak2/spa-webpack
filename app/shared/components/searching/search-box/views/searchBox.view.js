@@ -1,9 +1,9 @@
 var Backbone = require('backbone'),
-  constants = require('app/shared/util/constants'),
   Mustache = require('mustache'),
+  constants = require('app/shared/util/constants'),
   SearchBoxModel = require('../models/searchBox.model'),
-  tpl = require('../templates/searchBox.tpl.html'),
-  styles = require('../styles/styles.css');
+  tpl = require('../templates/searchBox.tpl.html');
+require('../styles/styles.css');
 
 module.exports = Backbone.View.extend({
   className: 'vlr-searchbox',
