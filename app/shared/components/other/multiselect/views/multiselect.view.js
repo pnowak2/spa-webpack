@@ -139,7 +139,7 @@ module.exports = Backbone.View.extend({
   },
 
   render: function() {
-    var html = Mustache.render(tpl, {
+    var html = tpl({
       items: this.collection.toJSON(),
       multiple: this.options.multiple,
       disabled: this.options.disabled

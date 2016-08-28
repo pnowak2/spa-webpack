@@ -257,7 +257,7 @@ module.exports = Backbone.View.extend({
   },
 
   render: function() {
-    var html = Mustache.render(tpl);
+    var html = Mustache.render(tpl());
 
     this.$el.html(html);
 

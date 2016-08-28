@@ -24,7 +24,7 @@ module.exports = {
       loader: "file-loader"
     }, {
       test: /\.html$/,
-      loader: "html-loader"
+      loader: "mustache-loader"
     }, {
       test: /\.modernizrrc$/,
       loader: "modernizr-loader"

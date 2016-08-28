@@ -74,7 +74,7 @@ module.exports = Backbone.View.extend({
   },
 
   render: function() {
-    var html = Mustache.render(tpl, this.model.toJSON());
+    var html = tpl(this.model.toJSON());
     this.$el.html(html);
     this.keywordInput = this.$el.find('input');
 
