@@ -1,4 +1,7 @@
 body {
-    background: blue;
-    background-image: url(../images/window.png);
+    background: #333;
+}
+
+.vlr-searchbox {
+	margin-top: 70px;
 }
