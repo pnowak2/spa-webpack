@@ -1,3 +1,5 @@
+require('styles/reset.css');
+
 var $ = require('jquery'),
   styles = require('./styles/style.css'),
   Modernizr = require('modernizr'),
@@ -7,6 +9,5 @@ var $ = require('jquery'),
     advancedSearchComponent: new CEAdvancedSearchComponent()
   });
 
-require('styles/reset.css');
 
 $('.search-container').html(searchComponent.render().view.el);
