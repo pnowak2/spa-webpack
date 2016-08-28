@@ -1,0 +1,42 @@
+{
+  "indent": 2,
+  "sub": true,
+  "undef": true,
+  "strict": false,
+	 "predef": [
+	 	/* JS Module */
+	 	"module",
+	 	"__dirname",
+	 	
+	 	/* RequireJS */
+	 	"define",
+	 	"require",
+	 	"requirejs",
+
+	 	/* Browser globals */
+	 	"document",
+	 	"window",
+
+	 	/* Jasmine */
+	    "jasmine",
+	    "describe",
+	    "xdescribe",
+	    "before",
+	    "beforeEach",
+	    "after",
+	    "afterEach",
+	    "it",
+	    "xit",
+	    "fail",
+	    "inject",
+	    "expect",
+	    "spyOn",
+	    "loadFixtures",
+	    "setFixtures",
+	    "spyOnEvent",
+
+	    /* PruneCluster Leaflet Plugin */
+	    "PruneCluster",
+	    "PruneClusterForLeaflet"
+		]
+}
