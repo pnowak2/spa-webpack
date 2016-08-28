@@ -1,8 +1,16 @@
+var path = require('path');
+
 module.exports = {
   entry: "./vlr-ce.js",
   output: {
     path: __dirname + '/dist',
     filename: "vlr-ce.min.js"
+  },
+  resolve: {
+    root: path.resolve('.'),
+    alias: {
+      modernizr$: path.resolve(__dirname, ".modernizrrc")
+    }
   },
   module: {
     loaders: [{
@@ -14,6 +22,12 @@ module.exports = {
     }, {
       test: /\.jpg$/,
       loader: "file-loader"
+    }, {
+      test: /\.html$/,
+      loader: "html-loader"
+    }, {
+      test: /\.modernizrrc$/,
+      loader: "modernizr-loader"
     }]
   }
 };

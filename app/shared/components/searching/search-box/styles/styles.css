@@ -1,0 +1,205 @@
+
+/* Search Box */
+.vlr-searchbox {
+    border-radius: 3px;
+    height: 40px;
+    position: relative;
+}
+
+.vlr-searchbox__input-container {
+    overflow: hidden;
+}
+
+.vlr-searchbox__buttons-container {
+    width: 140px;
+    float: right;
+    font-size: 0;
+}
+
+.vlr-searchbox__input-container,
+.vlr-searchbox__buttons-container {
+    height: 100%;
+}
+
+.vlr-searchbox__input {
+  width: 100%;
+  font-size: 19px;
+  padding: 0 15px;
+  color: #777;
+  border-radius: 3px 0 0 3px;
+}
+
+.vlr-searchbox__search-button {
+  width: 100px;
+  overflow: visible;
+  color: #fff;
+  background-color: #f05a22;
+  font-size: 19px;
+  position: relative;
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
+  cursor: pointer;
+}
+
+.vlr-searchbox__input,
+.vlr-searchbox__search-button,
+.vlr-searchbox__more-button {
+  height: 100%;
+  border: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vlr-searchbox__search-button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -7px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #f05a22;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.vlr-searchbox__more-button {
+  display: inline-block;
+  width: 40px;
+  background: #084886;
+  position: relative;
+  cursor: pointer;
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
+  border-radius: 0 3px 3px 0;
+  overflow: visible;
+
+}
+
+.csstransforms .vlr-searchbox__more-button--open {
+  -webkit-transition: background-color .35s linear;
+  -moz-transition: background-color .35s linear;
+  -ms-transition: background-color .35s linear;
+  -o-transition: background-color .35s linear;
+  transition: background-color .35s linear;
+}
+
+.vlr-searchbox__bars_container {
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  border: 0;
+  margin: auto auto;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.vlr-searchbox__bar1,
+.vlr-searchbox__bar2,
+.vlr-searchbox__bar3 {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  opacity: 1;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -ms-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+
+.vlr-searchbox__bar1 {
+  top: 0px;
+}
+
+.vlr-searchbox__bar2 {
+  top: 5px;
+}
+
+.vlr-searchbox__bar3 {
+  top: 10px;
+}
+
+.csstransforms .vlr-searchbox__more-button--open .vlr-searchbox__bar1 {
+  top: 6px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.csstransforms .vlr-searchbox__more-button--open .vlr-searchbox__bar2 {
+  opacity: 0;
+}
+
+.csstransforms .vlr-searchbox__more-button--open .vlr-searchbox__bar3{
+  top: 6px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.vlr-searchbox__tooltip {
+  box-sizing: border-box;
+  position: absolute;
+  width: 140px;
+  padding: 10px;
+  right: 0;
+  bottom: 100%;
+  background-color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  color: #666;
+
+  -webkit-transition: .3s ease-in-out; 
+  -moz-transition: .3s ease-in-out; 
+  -ms-transition: .3s ease-in-out; 
+  -o-transition: .3s ease-in-out; 
+  transition: .3s ease-in-out;
+  transform: translate(0, 0);
+}
+
+.vlr-searchbox__tooltip:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 99%;
+    right: 13px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #fff;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.vlr-searchbox__more-button--open .vlr-searchbox__tooltip {
+  -webkit-transform: translate(0, 15px); 
+  -moz-transform: translate(0, 15px); 
+  -o-transform: translate(0, 15px); 
+  -ms-transform: translate(0, 15px); 
+  transform: translate(0, 15px);
+
+  opacity: 0;
+}

@@ -16,6 +16,7 @@
 	 	/* Browser globals */
 	 	"document",
 	 	"window",
+	 	"console",
 
 	 	/* Jasmine */
 	    "jasmine",
