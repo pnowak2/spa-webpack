@@ -28,6 +28,12 @@ module.exports = {
     }, {
       test: /\.modernizrrc$/,
       loader: "modernizr-loader"
+    }, {
+      test: /\.jsx?/,
+      loader: 'babel-loader'
+    }, {
+      test: /\.js?/,
+      loader: 'babel-loader'
     }]
   }
 };
